@@ -1,11 +1,11 @@
 {
   "name": "rn-new-arch-checker",
-  "version": "0.1.0",
-  "description": "CLI tool to audit React Native dependencies for New Architecture (Fabric + TurboModules) compatibility. Scan your package.json and instantly see which packages block migration.",
+  "version": "0.1.1",
+  "description": "CLI to check if your React Native dependencies support the New Architecture (Fabric + TurboModules). Scan package.json, find migration blockers, gate CI. Run with npx.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": {
-    "rn-new-arch-checker": "./lib/cli.js"
+    "rn-new-arch-checker": "lib/cli.js"
   },
   "scripts": {
     "build": "tsc",
@@ -23,7 +23,18 @@
     "audit",
     "compatibility",
     "new-arch",
-    "bridgeless"
+    "bridgeless",
+    "react-native-new-architecture",
+    "new-architecture-compatibility",
+    "fabric-compatibility",
+    "turbomodule",
+    "react-native-directory",
+    "dependency-checker",
+    "upgrade",
+    "react-native-upgrade",
+    "expo",
+    "npx",
+    "ci"
   ],
   "author": "Salil Gupta",
   "license": "MIT",
@@ -37,7 +48,10 @@
     "@types/node-fetch": "^2.6.0",
     "typescript": "^5.0.0"
   },
-  "files": ["lib"],
+  "files": [
+    "lib",
+    "CHANGELOG.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/salilgupta2510/rn-new-arch-checker.git"
@@ -46,6 +60,10 @@
   "bugs": {
     "url": "https://github.com/salilgupta2510/rn-new-arch-checker/issues"
   },
-  "engines": { "node": ">=16.0.0" },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" }
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
